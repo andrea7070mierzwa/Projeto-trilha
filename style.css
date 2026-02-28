@@ -1,0 +1,270 @@
+:root {
+    --verde-primario: #00843D;
+    --verde-gradiente: linear-gradient(135deg, #00A859 0%, #006837 100%);
+    --verde-claro: #F1F8F4;
+    --branco: #FFFFFF;
+    --texto: #094504;
+    --cinza: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: var(--texto);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* HEADER */
+.header-principal {
+    background: var(--verde-gradiente);
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.logo span {
+    color: #FFD700;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* HERO */
+.hero {
+    background: var(--verde-claro);
+    padding: 60px 5%;
+    text-align: center;
+    border-bottom: 4px solid var(--verde-primario);
+}
+
+.hero h2 {
+    color: var(--verde-primario);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* CONTAINER PLATAFORMA */
+.container-plataforma {
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.controles-abas {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* BOTÕES */
+.btn-aba {
+    background: white;
+    border: 2px solid var(--verde-primario);
+    color: var(--verde-primario);
+    padding: 20px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.btn-aba.ativa {
+    background: var(--verde-gradiente);
+    color: white;
+}
+
+.btn-acao {
+    background: var(--verde-gradiente);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.btn-importar {
+    background: transparent;
+    border: 1px dashed var(--verde-primario);
+    color: var(--verde-primario);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* FORMS E CARDS */
+.card-form {
+    background: var(--verde-claro);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(8, 131, 4, 0.05);
+    max-width: 500px;
+    margin: 0 auto 40px;
+    border-color: #006837;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-form input,
+.card-form select,
+.card-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.grid-cards {
+    display: grid;
+    /* O 'auto-fit' garante que eles ocupem a largura, mas o minmax impede que fiquem muito estreitos */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.card {
+    background: rgb(218, 241, 218);
+    /* O verde claro que você escolheu */
+    padding: 25px;
+    /* Aumentei o preenchimento interno para não achatar o texto */
+    border-radius: 15px;
+    border-top: 10px solid var(--verde-primario);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+    /* Garante que mesmo com pouco texto, o card tenha uma altura bonita */
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.card p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Efeito suave ao passar o mouse */
+}
+
+.card h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: var(--texto);
+}
+
+/* Garante que o botão dentro do card não fique colado no texto */
+.card .btn-acao {
+    margin-top: auto;
+    padding: 10px;
+}
+
+
+
+
+/* SEÇÕES INFORMATIVAS */
+.secao-texto {
+    padding: 60px 5%;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    align-self: flex-start;
+}
+
+.bg-verde-claro {
+    background-color: var(--verde-claro);
+}
+
+.conteudo-limite {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.titulo-verde {
+    color: var(--verde-primario);
+    margin-bottom: 20px;
+}
+
+.card-form-contato {
+    background: rgb(130, 226, 130);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+footer {
+    background: var(--verde-gradiente);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+p.footer-link {
+    color: rgb(3, 39, 1);
+    text-decoration: underline;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* AJUSTE DE RESPIRO NA SEÇÃO SOBRE */
+.secao-texto p {
+    line-height: 1.8;
+    /* Aumenta o espaço entre as linhas */
+    margin-bottom: 20px;
+    /* Dá um espaço entre um parágrafo e outro */
+    text-align: justify;
+    /* Deixa o bloco de texto alinhado dos dois lados, fica bem elegante */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Dica: use uma fonte mais leve para textos longos */
+    text-align: center;
+}
+
+.conteudo-limite {
+    max-width: 850px;
+    /* Dá uma largura confortável para os olhos */
+    margin: 0 auto;
+}

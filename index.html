@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Carreira Tech | SC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header-principal">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Conexão <span>Carreira Tech</span></h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#plataforma" onclick="mostrar('vagas')">Vagas</a></li>
+                <li><a href="#plataforma" onclick="mostrar('talentos')">Talentos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Oportunidades em Santa Catarina</h2>
+            <p>Conectando talentos locais ao mercado de tecnologia do futuro.</p>
+        </section>
+
+        <section id="plataforma" class="container-plataforma">
+            <div class="controles-abas">
+                <button id="tab-vagas" onclick="mostrar('vagas')" class="btn-aba ativa">Banco de Vagas</button>
+                <button id="tab-talentos" onclick="mostrar('talentos')" class="btn-aba">Banco de Talentos</button>
+            </div>
+
+            <div id="setor-vagas" class="conteudo-aba">
+                <form id="form-vaga" class="card-form">
+                    <h3>📢 Postar Nova Oportunidade</h3>
+                    <input type="text" id="v-titulo" placeholder="Título da Vaga (ex: Dev Frontend)" required>
+                    <input type="text" id="v-empresa" placeholder="Nome da Empresa" required>
+                    <select id="v-mod">
+                        <option value="Híbrido">Híbrido</option>
+                        <option value="Remoto">Remoto</option>
+                        <option value="Presencial">Presencial (SC)</option>
+                    </select>
+                    <input type="url" id="v-link" placeholder="URL para candidatura (Link)">
+                    <button type="submit" class="btn-acao">Publicar Agora</button>
+                    <button type="button" onclick="importarVagasReais()" class="btn-importar">✨ Importar Vagas de
+                        SC</button>
+                </form>
+                <div id="lista-vagas" class="grid-cards"></div>
+            </div>
+
+            <div id="setor-talentos" class="conteudo-aba" style="display:none;">
+                <form id="form-talento" class="card-form">
+                    <h3>👤 Cadastro de Profissional</h3>
+                    <input type="text" id="t-nome" placeholder="Seu Nome Completo" required>
+                    <input type="text" id="t-cargo" placeholder="Sua Especialidade (ex: UI Designer)" required>
+                    <textarea id="t-bio" placeholder="Fale um pouco sobre suas competências..." rows="3"></textarea>
+                    <input type="url" id="t-link" placeholder="Link do Portfólio ou LinkedIn">
+                    <button type="submit" class="btn-acao">Salvar meu Perfil</button>
+                    <button type="button" onclick="importarTalentosReais()" class="btn-importar">✨ Importar
+                        Destaques</button>
+                </form>
+                <div id="lista-talentos" class="grid-cards"></div>
+            </div>
+        </section>
+
+        <section id="sobre" class="secao-texto">
+            <div class="conteudo-limite">
+                <h2 class="titulo-verde">Sobre o Projeto</h2>
+                <p>O <strong>Conexão Carreira Tech</strong> é uma plataforma focada em fortalecer o ecossistema
+                    tecnológico de Santa Catarina. Desenvolvido como uma <strong>Single Page Application (SPA)</strong>,
+                    o sistema garante uma navegação rápida e moderna.</p>
+                <p>Utilizamos <strong>LocalStorage</strong> para a persistência de dados, assegurando que as informações
+                    permaneçam salvas no dispositivo do usuário, demonstrando um modelo de arquitetura ágil para
+                    soluções de RH Tech.</p>
+            </div>
+        </section>
+
+        <section id="contato" class="secao-texto bg-verde-claro">
+            <div class="conteudo-limite">
+                <h2 class="titulo-verde">Contato & Suporte</h2>
+                <form id="form-contato" class="card-form-contato">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <textarea placeholder="Como podemos ajudar?" rows="3" required></textarea>
+                    <button type="submit" class="btn-acao">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Conexão Carreira Tech SC</strong></p>
+        <p style="font-size: 0.8rem; opacity: 0.7;">&copy; 2026 - Desenvolvido por Andrea Mierzwa</p>
+    </footer>
+</body>
+
+</html>
