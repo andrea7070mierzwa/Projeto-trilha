@@ -1,31 +1,88 @@
-🚀 Conexão Carreira Tech | SC
-O Conexão Carreira Tech é uma plataforma desenvolvida para fortalecer o ecossistema tecnológico de Santa Catarina, conectando talentos locais a oportunidades reais de mercado. O projeto foi construído como uma Single Page Application (SPA) para garantir agilidade e uma experiência de usuário moderna.
+# Conexão Carreira Tech | SC 🚀
 
-💡 Funcionalidades Principais
-Banco de Vagas: Espaço para empresas postarem oportunidades (Título, Empresa, Modalidade e Link).
+Projeto experimental criado no início da minha trilha de aprendizagem em tecnologia.
 
-Banco de Talentos: Cadastro de profissionais com nome, especialidade, bio e links de portfólio.
+A ideia nasceu como uma brincadeira séria: imaginar uma plataforma simples para conectar talentos locais ao mercado de tecnologia em Santa Catarina.
 
-Importação Inteligente: Botões mágicos que importam dados reais de grandes empresas de SC (como Senior, Softplan e RD Station) para demonstração.
+---
 
-Persistência de Dados: Uso de LocalStorage para garantir que as vagas e perfis fiquem salvos no navegador, mesmo após atualizar a página.
+## Sobre o projeto
 
-Interface Responsiva: Layout adaptável com botões de navegação por abas e cards estilizados com CSS Grid.
+O **Conexão Carreira Tech** é uma página web com proposta de simular uma plataforma de conexão entre profissionais e oportunidades na área de tecnologia.
 
-🛠️ Tecnologias Utilizadas
-HTML5: Estruturação semântica e formulários interativos.
+O projeto apresenta áreas para:
 
-CSS3 (Custom Properties & Grid): Design moderno usando variáveis (:root), gradientes e layouts em Grid para os cards.
+- visualização de vagas;
+- cadastro de talentos;
+- publicação de oportunidades;
+- informações sobre a proposta da plataforma;
+- contato e suporte.
 
-JavaScript (Vanilla): Lógica de manipulação de DOM, persistência em LocalStorage e controle de estado das abas.
+A página foi pensada como uma **Single Page Application (SPA)** simples, com navegação direta e estrutura visual voltada para uma experiência rápida e objetiva.
 
-🔧 Como Visualizar
-Clone o repositório ou baixe os arquivos.
+---
 
-Certifique-se de que o index.html, style.css e script.js estejam na mesma pasta.
+## Objetivo
 
-Abra o arquivo index.html em qualquer navegador moderno.
+Este projeto foi criado antes do curso, quando eu ainda estava começando a explorar HTML, CSS e JavaScript.
 
-Nota do Projeto: Este sistema demonstra um modelo de arquitetura ágil para soluções de RH Tech, unindo performance e usabilidade.
+Mesmo sendo um projeto inicial, ele representa uma parte importante da minha jornada: o momento em que comecei a transformar ideias em telas, testar possibilidades e entender melhor como a lógica de uma aplicação pode nascer a partir de uma proposta real.
 
-© 2026 - Desenvolvido por Andrea Mierzwa.
+---
+
+## Tecnologias utilizadas
+
+- HTML
+- CSS
+- JavaScript
+- LocalStorage
+- GitHub Pages
+
+---
+
+## Funcionalidades simuladas
+
+- Página inicial com apresentação da proposta;
+- área de vagas;
+- área de talentos;
+- formulário para postar nova oportunidade;
+- formulário para cadastro profissional;
+- navegação em formato SPA;
+- uso de LocalStorage para simular persistência de dados.
+
+---
+
+## O que aprendi com ele
+
+Com este projeto, comecei a praticar:
+
+- estruturação de páginas web;
+- organização visual com CSS;
+- primeiros passos com JavaScript;
+- manipulação de dados no navegador;
+- ideia de persistência com LocalStorage;
+- publicação de projeto com GitHub Pages.
+
+Também aprendi uma coisa importante:
+
+> Nem todo projeto inicial precisa ser perfeito.  
+> Alguns existem para mostrar o começo da caminhada.
+
+E este é exatamente isso. 😄
+
+---
+
+## Status do projeto
+
+✅ Projeto publicado  
+🛠️ Projeto experimental  
+📚 Mantido como registro da minha evolução na trilha de aprendizagem
+
+---
+
+## Demonstração
+
+Acesse o projeto publicado pelo GitHub Pages:
+
+```txt
+https://andrea7070mierzwa.github.io/Projeto-trilha/
